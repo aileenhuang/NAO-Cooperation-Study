@@ -1,0 +1,19 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>
+		Dogenerator
+	</title>
+</head>
+
+<body>
+	<%	result.each do |phrase| %>
+	<div style="margin: 10px; position: absolute; TOP: <%= rand(0..400) %>px; LEFT: <%= rand(0..500) %>px">
+		<font color="<%=colors.sample%>" size="<%=rand(2..5)%>px">
+			<%= phrase %>
+		</font>
+	</div>
+	<% end %>
+	
+</body>
+</html>

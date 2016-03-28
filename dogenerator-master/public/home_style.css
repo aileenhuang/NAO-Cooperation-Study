@@ -1,0 +1,53 @@
+body {
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	background-image: url("pic.jpg");
+	background-size: cover;
+	background-position: 80% 0%;
+}
+
+h1 {
+	font-size: 80px;
+}
+
+img {
+	opacity: .8;
+	border-radius: 7px;
+}
+
+input {
+	display: block;
+}
+
+#button {
+	margin-top: 20px;
+	font-size: 20px;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	border-radius: 100px;
+	-moz-border-radius: 100px;
+	-webkit-border-radius: 100px
+	-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+	-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+	border: 1px solid #FFFFFF;
+	background-color: white;
+	color: black;
+}
+
+
+#container {
+	width: 400px;
+	margin: 0 auto;
+	background-color: rgba(0, 0, 0, 0.3);
+	border-radius: 8px;
+	padding: 10px;
+}
+
+
+#container span {
+	color: rgb(230, 230, 230);
+}
+
+span {
+	margin: 10px;
+	margin-top: 20px;
+	display: block;
+}

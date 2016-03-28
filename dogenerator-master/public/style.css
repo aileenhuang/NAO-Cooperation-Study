@@ -1,0 +1,10 @@
+body {
+	background-image: url("pic.jpg");
+/*	background-size: cover;
+*/
+	background-repeat: no-repeat;
+	min-height: 506px;
+	min-width: 675px;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
