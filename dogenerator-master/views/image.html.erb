@@ -7,13 +7,17 @@
 </head>
 
 <body>
-	<%	result.each do |phrase| %>
 	<div style="margin: 10px; position: absolute; TOP: <%= rand(0..400) %>px; LEFT: <%= rand(0..500) %>px">
-		<font color="<%=colors.sample%>" size="<%=rand(2..5)%>px">
-			<%= phrase %>
+		<font size="<%=rand(2..5)%>px">
+			<%= text %>
+			<%= $question_num%>
+			<%= $counter%>
 		</font>
 	</div>
-	<% end %>
-	
+	<div id="container">
+	<form action="/" method="get">
+			<input id="button" type="submit" value="next">
+	</form>
+	</div>
 </body>
 </html>

@@ -1,45 +1,49 @@
 require 'sinatra'
-require_relative 'engtagger2/lib/engtagger'
 require 'rubygems'
-require 'pry'
-require_relative 'questions'
+#require 'pry'
+require_relative 'dogegenerator'
 
 configure do
     enable :sessions
     set :port, 9494
 end
 
-# before do
+
+    $counter = 0
+    $question_num = 0
+
 #     @colors = ["blue", "red", "cyan", "fuchsia", "darkorchid", "yellow", "lime"]
 #     text = "wow"
 # end
 
 get "/" do
-    result ||= ''
-    erb :"index.html", :locals => {:result => result}
+    text ||= ''
+    erb :"index.html"
 end
 
 post "/" do
     #img = ImageList.new('pic.jpg')
-    text = params[:inputtext].downcase
-    num = params[:inputnum].to_i
+    answer = params[:inputtext].downcase
 
-    tagged = TGR.add_tags(text)
-    nouns = TGR.get_nouns(tagged)
-    pnouns = TGR.get_plural_nouns(tagged)
-    adjs = TGR.get_adjectives(tagged)
-    singnouns = get_singular_nouns(nouns, tagged)
-
-    result = gen_all(pnouns, adjs, singnouns)
-    numwows = result.length / 3
-    i=0
-    while i < numwows do
-        result.push("wow")
-        i += 1
+    # check that text is answer
+    if answer == "a"
+        text = "correct"
+        $counter +=1
+    else 
+        text = "incorrect"
     end
+    $question_num +=1
+
+    # if yes, display happy if no display sad
+
+
+    #result = gen_all(pnouns, adjs, singnouns)
+    # numwows = 9 / 3
+    # i=0
         
     
-    erb :"image.html", :locals => {:result => result.sample(num), :colors => @colors}
+    erb :"image.html", :locals => {:text => text, :colors => @colors}
+    #slim : "image.html", :text => {:text=> text, :result => result.sample}
 end
 
 

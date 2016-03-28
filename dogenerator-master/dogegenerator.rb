@@ -1,14 +1,7 @@
 require 'sinatra'
 require 'rubygems'
-require 'pry'
+#require 'pry'
 
-TGR = EngTagger.new
-modifiers = ["much", "many", "such", "so", "very"]
-
-#pairings of modifiers with their appropriate parts of speech
-MODPAIRS = {"singnouns" => ["many", "much", "such", "so", "very"],
-        "adjectives" => ["many", "such", "much"],
-        "pnouns" => ["much", "such", "so", "very"]}
 
 # returns HASH of singular nouns
 # takes nouns-hash and tagged string and
