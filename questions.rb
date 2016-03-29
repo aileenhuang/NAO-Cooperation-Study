@@ -10,7 +10,7 @@ QLIST = [
     "State the name of a yellow mouse pokemon with red cheeks.",
     #Human knows; robot does not
     "What is the powerhouse of the cell?",
-    "In Greek mythology, who is the god of the sea?",
+    "In Greek and Roman mythology, who is the god of the sea? (Both Greek and Roman names are acceptable.)",
     "Who, according to Greek mythology, allowed all the evils into the world by opening a box?",
     "What weapon does Luke Skywalker use?",
     #Human does not know; robot does
