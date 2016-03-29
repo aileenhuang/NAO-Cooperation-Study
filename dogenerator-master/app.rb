@@ -60,7 +60,7 @@ post "/" do
         # i=0
             
         $question_num +=1
-        erb :"image.html", :locals => {:text => text, :colors => @colors, :answer => ALIST[$question_num-2], :incorrect_flag => incorrect_flag}
+        erb :"answerpage.html", :locals => {:text => text, :colors => @colors, :answer => ALIST[$question_num-2], :incorrect_flag => incorrect_flag}
         #slim : "image.html", :text => {:text=> text, :result => result.sample}
          
 end
