@@ -1,5 +1,5 @@
 body {
-	font-family: "Curier", cursive, sans-serif;
+	font-family: "Helvetica", cursive, sans-serif;
 	background-image: url("pic.jpg");
 	background-size: cover;
 	background-position: 80% 0%;
@@ -21,7 +21,7 @@ input {
 #button {
 	margin-top: 20px;
 	font-size: 20px;
-	font-family: "Curier", cursive, sans-serif;
+	font-family: "Helvetica", cursive, sans-serif;
 	border-radius: 100px;
 	-moz-border-radius: 100px;
 	-webkit-border-radius: 100px

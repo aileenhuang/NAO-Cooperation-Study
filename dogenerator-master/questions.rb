@@ -13,7 +13,7 @@ QAPAIRS = {
     #Human knows; robot does not
     "What is the powerhouse of the cell?" => ["mitochondria"],
     "In Greek mythology, who is the god of the sea?" => ["neptune"],
-    "Who, according to Greek mythology, allowed all the evils into the world by opening a box?" => ["pandora"]
+    "Who, according to Greek mythology, allowed all the evils into the world by opening a box?" => ["pandora"],
     "What weapon does Luke Skywalker use?" => ["lightsaber"],
     "What famous fictional detective lived on 221B Baker Street?" => ["sherlock holmes"],
     "Name a member of the Beatles." => ["ringo starr", "george harrison", "john lennon", "paul mccartney"],

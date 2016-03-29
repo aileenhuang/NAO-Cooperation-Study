@@ -1,7 +1,7 @@
 require 'sinatra'
 require 'rubygems'
 #require 'pry'
-require_relative 'dogegenerator'
+require_relative 'questions'
 
 configure do
     enable :sessions
@@ -18,7 +18,15 @@ end
 
 get "/" do
     text ||= ''
-    erb :"index.html"
+    puts "I AM HERE
+
+
+
+
+
+    "
+    #puts QAPAIRS[$counter]
+    erb :"index.html", :locals => {:question => QAPAIRS[$counter]}
 end
 
 post "/" do
