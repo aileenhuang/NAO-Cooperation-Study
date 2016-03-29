@@ -17,7 +17,7 @@ QAPAIRS = {
     "What weapon does Luke Skywalker use?" => ["lightsaber"],
     "What famous fictional detective lived on 221B Baker Street?" => ["sherlock holmes"],
     "Name a member of the Beatles." => ["ringo starr", "george harrison", "john lennon", "paul mccartney"],
-    #Human does not know; robot does
+    #Human does not know; robot doesd
     "Which emperor of Japan transformed Japan from a feudal state to a capitalist world power?" => ["emperor meiji", "meiji"]
 }
 
