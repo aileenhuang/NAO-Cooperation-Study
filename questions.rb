@@ -40,7 +40,9 @@ ALIST = [
     ["Emperor Meiji", "Meiji"],
     ["Finland"],
     ["frog-like", "froglike"],
-    ["King James I", "James I"],
+    ["King James VI and I", "James I", "James VI", 
+        "James VI and I", "James I and VI",
+        "King James I", "King James VI", "King James I and VI"],
     #Neither knows
     ["ocean", "the ocean"],
     ["The Adventures of Tom Sawyer", "Tom Sawyer"],
