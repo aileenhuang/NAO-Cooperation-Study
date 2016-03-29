@@ -13,6 +13,11 @@ h2 {
 	font-weight:normal;
 }
 
+h3 {
+	font-size: 25px;
+	font-weight:normal;
+}
+
 img {
 	opacity: .8;
 	border-radius: 7px;
@@ -45,11 +50,12 @@ input {
 
 
 #container {
-	width: 500px;
-	margin: 100 auto;
+	width: 800px;
+	margin: 10 auto;
 	background-color: #d3d3d3;
 	border-radius: 8px;
 	padding: 10px;
+	font-size: 20pt;
 }
 
 
@@ -59,12 +65,12 @@ input {
 
 span {
 	margin: 10px;
-	margin-top: 20px;
+	margin-top: 25px;
 	display: block;
 }
 
 textarea {
-	font-size: 10pt;
+	font-size: 15pt;
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
     font-weight: 300;;
 }
