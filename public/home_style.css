@@ -4,7 +4,12 @@ body {
 }
 
 h1 {
-	font-size: 80px;
+	font-size: 70px;
+	font-weight:normal;
+}
+
+h2 {
+	font-size: 50px;
 	font-weight:normal;
 }
 
@@ -33,27 +38,33 @@ input {
 	-webkit-border-radius: 100px
 	-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
 	-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
-	border: 1px solid #FFFFFF;
+	border: 1px solid black;
 	background-color: white;
 	color: black;
 }
 
 
 #container {
-	width: 400px;
+	width: 500px;
 	margin: 100 auto;
-	background-color: rgba(0, 0, 0, 0.3);
+	background-color: #d3d3d3;
 	border-radius: 8px;
 	padding: 10px;
 }
 
 
 #container span {
-	color: rgb(230, 230, 230);
+	/*color: rgb(230, 230, 230);*/
 }
 
 span {
 	margin: 10px;
 	margin-top: 20px;
 	display: block;
+}
+
+textarea {
+	font-size: 10pt;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight: 300;;
 }

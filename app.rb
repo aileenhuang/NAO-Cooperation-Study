@@ -24,7 +24,7 @@ get "/" do
         
      #    erb :"index.html", :locals => {:question => QLIST[$question_num-1], :question_num => $question_num}
       #   $question_num+=1
-    elsif $question_num == QLIST.length()
+    elsif $question_num == QLIST.length()+1
         open('scores.out', 'a') do |f|
             f.puts "score is: " + $correct_counter.to_s + "\n"
         end
@@ -41,25 +41,15 @@ post "/" do
         incorrect_flag = false
 
         # check that text is answer
-        #if answers.include?(answer)
-       # if ALIST[$question_num].include?(answer)
-       if ALIST[$question_num-1] == answer
-            text = "Correct"
+       if ALIST[$question_num-1].map{|elt| elt.downcase}.include?(answer)
+            text = "Correct!"
             $correct_counter +=1
         else 
-            text = "Incorrect"
+            text = "Incorrect."
             incorrect_flag = true
         end
-
-
-        # if yes, display happy if no display sad
-
-
-        #result = gen_all(pnouns, adjs, singnouns)
-        # numwows = 9 / 3
-        # i=0
             
-        $question_num +=1
+        $question_num += 1
         erb :"answerpage.html", :locals => {:text => text, :colors => @colors, :answer => ALIST[$question_num-2], :incorrect_flag => incorrect_flag}
         #slim : "image.html", :text => {:text=> text, :result => result.sample}
          
