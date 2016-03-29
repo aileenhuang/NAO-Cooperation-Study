@@ -18,15 +18,9 @@ end
 
 get "/" do
     text ||= ''
-    puts "I AM HERE
 
-
-
-
-
-    "
-    #puts QAPAIRS[$counter]
-    erb :"index.html", :locals => {:question => QAPAIRS[$counter]}
+    puts QLIST[$counter]
+    erb :"index.html", :locals => {:question => QLIST[$counter]}
 end
 
 post "/" do

@@ -2,7 +2,7 @@ require 'sinatra'
 require 'rubygems'
 require 'pry'
 
-question_list = [
+QLIST = [
     #Both robot and human know
     "What Disney movie is the song “Make a Man Out of You” from?",
     "How many notes are in an octave?",
@@ -21,7 +21,7 @@ question_list = [
     "Which emperor of Japan transformed Japan from a feudal state to a capitalist world power?"
 ]
 
-answer_list = [
+ALIST = [
     "mulan", "8", "hedwig", "pikachu", "nile river", "karl marx", "mitochondria", "neptune", "pandora", "lightsaber", "sherlock holmes", "john lennon", "emperor meiji"
 ]
 
