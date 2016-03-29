@@ -1,23 +1,25 @@
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="home_style.css">
 	<title>
 		Trivia
 	</title>
 </head>
 
 <body>
-	<div style="margin: 10px; position: absolute; TOP: <%= rand(0..400) %>px; LEFT: <%= rand(0..500) %>px">
-		<font size="<%=rand(2..5)%>px">
-			<%= text %>
-			<%= $question_num%>
-			<%= $counter%>
-		</font>
-	</div>
-	<div id="container">
+	<center>
+		<h1> <%= text %> </h1> 
+
+		<% if incorrect_flag == true%>
+			The correct answer was "<%= answer %>".
+		<% end %>
+	
+
+
 	<form action="/" method="get">
-			<input id="button" type="submit" value="next">
+			<input id="button" type="submit" value="Next">
 	</form>
-	</div>
+	
+</center>
 </body>
 </html>

@@ -1,19 +1,19 @@
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="home_style.css">
-		<title>Trivia!!!!</title>
+		<title>Trivia Game</title>
 	</head>
 
 	<body>
 
 		<center>
-			<h1>Trivia!!!</h1>
+			<h1>Question <%= question_num %></h1>
 			
 			<div id="container">
 			<form action="/" method="post">
 				<label>
 					<span><%= question %></span>
-					<textarea rows="2" cols="30" name="inputtext" placeholder="type answer here" required></textarea>
+					<textarea rows="2" cols="30" name="inputtext" placeholder="Type answer here." required></textarea>
 				</label>
 
 				<input id="button" type="submit" value="submit">

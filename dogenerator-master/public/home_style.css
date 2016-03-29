@@ -1,12 +1,11 @@
-body {
-	font-family: "Helvetica", cursive, sans-serif;
-	background-image: url("pic.jpg");
-	background-size: cover;
-	background-position: 80% 0%;
+body { 
+   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   font-weight: 300;
 }
 
 h1 {
 	font-size: 80px;
+	font-weight:normal;
 }
 
 img {
@@ -18,10 +17,17 @@ input {
 	display: block;
 }
 
+::-webkit-input-placeholder {
+   text-align: center;
+   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   font-weight: 300;
+}
+
 #button {
 	margin-top: 20px;
 	font-size: 20px;
-	font-family: "Helvetica", cursive, sans-serif;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight: 300;
 	border-radius: 100px;
 	-moz-border-radius: 100px;
 	-webkit-border-radius: 100px
@@ -35,7 +41,7 @@ input {
 
 #container {
 	width: 400px;
-	margin: 0 auto;
+	margin: 100 auto;
 	background-color: rgba(0, 0, 0, 0.3);
 	border-radius: 8px;
 	padding: 10px;
