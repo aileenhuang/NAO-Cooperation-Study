@@ -37,11 +37,11 @@ end
 post "/" do
 
         #img = ImageList.new('pic.jpg')
-        answer = params[:inputtext].downcase
+        answer = params[:inputtext].downcase.gsub(/\s+/, "")
         incorrect_flag = false
 
         # check that text is answer
-       if ALIST[RENUMBERED[$question_num-1]-1].map{|elt| elt.downcase}.include?(answer)
+       if ALIST[RENUMBERED[$question_num-1]-1].map{|elt| elt.downcase}.map{|elt| elt.gsub(/\s+/, "")}.include?(answer)
             text = "Correct!"
             $correct_counter +=1
         else 

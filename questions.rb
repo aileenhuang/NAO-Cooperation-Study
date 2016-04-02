@@ -23,7 +23,8 @@ QLIST = [
     #Neither knows
     "What does the word 'dalai' (as in the Dalai Lama) mean?",
     "What was the first novel written on a typewriter?",
-    "Who ran against FDR in 1940?"
+    "Who was Don McLean's 'American Pie' written about?"
+    "Who ran against FDR in 1936?"
 ]
 
 ALIST = [
@@ -36,7 +37,7 @@ ALIST = [
     ["Mitochondria"],
     ["Poseidon", "Neptune"],
     ["Pandora"],
-    ["lightsaber"],
+    ["lightsaber", "light-saber"],
     #Human does not know; robot does
     ["Emperor Meiji", "Meiji"],
     ["Finland"],
@@ -48,5 +49,5 @@ ALIST = [
     ["ocean", "the ocean"],
     ["The Adventures of Tom Sawyer", "Tom Sawyer"],
     ["Buddy Holly"],
-    ["Wendell Willkie"]
+    ["Alf Landon"]
 ]
