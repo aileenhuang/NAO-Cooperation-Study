@@ -30,7 +30,7 @@ get "/" do
         end
       erb :"end.html", :locals => {:score => $correct_counter}
     else 
-       erb :"index.html", :locals => {:question => QLIST[$question_num-1], :question_num => $question_num}
+       erb :"index.html", :locals => {:question => QLIST[RENUMBERED[$question_num-1]-1], :question_num => $question_num}
     end
 end
 
@@ -41,7 +41,7 @@ post "/" do
         incorrect_flag = false
 
         # check that text is answer
-       if ALIST[$question_num-1].map{|elt| elt.downcase}.include?(answer)
+       if ALIST[RENUMBERED[$question_num-1]-1].map{|elt| elt.downcase}.include?(answer)
             text = "Correct!"
             $correct_counter +=1
         else 
@@ -50,7 +50,7 @@ post "/" do
         end
             
         $question_num += 1
-        erb :"answerpage.html", :locals => {:text => text, :colors => @colors, :answer => ALIST[$question_num-2], :incorrect_flag => incorrect_flag}
+        erb :"answerpage.html", :locals => {:text => text, :colors => @colors, :answer => ALIST[RENUMBERED[$question_num-2]-1], :incorrect_flag => incorrect_flag}
         #slim : "image.html", :text => {:text=> text, :result => result.sample}
          
 end
