@@ -23,7 +23,7 @@ QLIST = [
     #Neither knows
     "What does the word 'dalai' (as in the Dalai Lama) mean?",
     "What was the first novel written on a typewriter?",
-    "Who was Don McLean's 'American Pie' written about?"
+    "Who was Don McLean's 'American Pie' written about?",
     "Who ran against FDR in 1936?"
 ]
 
@@ -47,7 +47,7 @@ ALIST = [
         "King James I", "King James VI", "King James I and VI"],
     #Neither knows
     ["ocean", "the ocean"],
-    ["The Adventures of Tom Sawyer", "Tom Sawyer"],
+    ["The Adventures of Tom Sawyer", "Adventures of Tom Sawyer", "Tom Sawyer"],
     ["Buddy Holly"],
     ["Alf Landon"]
 ]
