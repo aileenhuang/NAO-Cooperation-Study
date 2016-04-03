@@ -18,9 +18,10 @@ $question_num = 0
 
 get "/" do
     text ||= ''
+
     if $question_num == 0
         $question_num+=1
-         erb :"start.html", :locals => {}
+        erb :"start.html", :locals => {}
         
      #    erb :"index.html", :locals => {:question => QLIST[$question_num-1], :question_num => $question_num}
       #   $question_num+=1
@@ -30,7 +31,8 @@ get "/" do
         end
       erb :"end.html", :locals => {:score => $correct_counter}
     else 
-       erb :"index.html", :locals => {:question => QLIST[RENUMBERED[$question_num-1]-1], :question_num => $question_num}
+        sleep(1.5)
+        erb :"index.html", :locals => {:question => QLIST[RENUMBERED[$question_num-1]-1], :question_num => $question_num}
     end
 end
 
