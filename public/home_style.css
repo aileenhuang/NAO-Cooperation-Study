@@ -14,7 +14,7 @@ h2 {
 }
 
 h3 {
-	font-size: 25px;
+	font-size: 30px;
 	font-weight:normal;
 }
 
@@ -48,8 +48,32 @@ input {
 	color: black;
 }
 
+#left {
+	max-width = 100%;
+	overflow:hidden;
+	text-align:left;
+	/*float:left;*/
+	position:absolute;
+	left:50px;
+	top:100px;
+	bottom:10px;
+}
+
+#right {
+	overflow:hidden;
+	text-align:right;
+	float:right;
+	padding-right:50px;
+}
+
+ul {
+	list-style-type: none;
+}
+
 
 #container {
+	overflow:hidden;
+	position:relative;
 	width: 800px;
 	margin: 10 auto;
 	background-color: #d3d3d3;
@@ -58,17 +82,13 @@ input {
 	font-size: 20pt;
 }
 
-
-#container span {
-	/*color: rgb(230, 230, 230);*/
-}
-
-span {
+/*span {
+	text-align: left;
 	margin: 10px;
 	margin-top: 25px;
 	display: block;
 }
-
+*/
 textarea {
 	font-size: 15pt;
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 

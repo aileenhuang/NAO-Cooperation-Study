@@ -12,33 +12,28 @@ end
 $correct_counter = 0
 $question_num = 0
 
-#     @colors = ["blue", "red", "cyan", "fuchsia", "darkorchid", "yellow", "lime"]
-#     text = "wow"
-# end
-
 get "/" do
     text ||= ''
 
-    if $question_num == 0
-        $question_num+=1
+    # if $question_num == 0
+    #     $question_num+=1
         erb :"start.html", :locals => {}
         
      #    erb :"index.html", :locals => {:question => QLIST[$question_num-1], :question_num => $question_num}
       #   $question_num+=1
-    elsif $question_num == QLIST.length()+1
-        open('scores.out', 'a') do |f|
-            f.puts "score is: " + $correct_counter.to_s + "\n"
-        end
+    # elsif $question_num == QLIST.length()+1
+        # open('scores.out', 'a') do |f|
+        #     f.puts "score is: " + $correct_counter.to_s + "\n"
+        # end
       erb :"end.html", :locals => {:score => $correct_counter}
-    else 
-        sleep(1.5)
-        erb :"index.html", :locals => {:question => QLIST[RENUMBERED[$question_num-1]-1], :question_num => $question_num}
-    end
+    # else 
+        # sleep(1.5)
+        # erb :"index.html", :locals => {:question => QLIST[RENUMBERED[$question_num-1]-1], :question_num => $question_num}
+    # end
 end
 
 post "/" do
 
-        #img = ImageList.new('pic.jpg')
         answer = params[:inputtext].downcase.gsub(/\s+/, "")
         incorrect_flag = false
 
@@ -53,7 +48,6 @@ post "/" do
             
         $question_num += 1
         erb :"answerpage.html", :locals => {:text => text, :colors => @colors, :answer => ALIST[RENUMBERED[$question_num-2]-1], :incorrect_flag => incorrect_flag}
-        #slim : "image.html", :text => {:text=> text, :result => result.sample}
          
 end
 

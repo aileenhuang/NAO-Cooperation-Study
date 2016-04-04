@@ -51,3 +51,7 @@ ALIST = [
     ["Buddy Holly"],
     ["Alf Landon"]
 ]
+
+HIGHSCORES = [
+    
+]
