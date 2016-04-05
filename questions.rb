@@ -52,6 +52,40 @@ ALIST = [
     ["Alf Landon"]
 ]
 
-HIGHSCORES = [
-    
+SCORES = [
+    16,
+    15,
+    14,
+    13,
+    12,
+    8,
+    6.5,
+    5,
+    4,
+    3.5,
 ]
+
+def compute_pos(score, choice=0)
+    str1 = "If you take all of the credit for your and NAO's work, you get a score of "
+    str2 = " and a rank of "
+    str = ""
+    if choice == 1
+        score = score/2.0
+        str1 = "If you believe you and NAO contributed work equally, you get a score of "
+    elsif choice == 2
+        score = 0
+        str1 = "If you believe NAO did all of the work, you get a score of "
+    end
+    
+    len = SCORES.length
+    for i in 0...len
+        puts i
+        puts SCORES[0]
+        if score >= SCORES[i]
+            str = str1 + score.to_s + str2 + (i+1).to_s + "."
+            puts "STR is " + str
+            return str
+        end
+    end
+    return str = str1 + "0" + str2 + (i+1).to_s + "."
+end

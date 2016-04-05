@@ -7,39 +7,23 @@
 	<body>
 
 		<center>
-			<h2>Congratulations!</h2>
+			<h1>Congratulations!</h1>
 			<h3>You have finished the game with <%= score %> points.</h3>
 
 			<div id = "container">
-				<h3>High Scores</h3>
-				<div id = "left">
-					<ol>
-					<li>Participant 6</li>
-					<li>Participant 8</li>
-					<li>Participant 5</li>
-					<li>Participant 3</li>
-					<li>Participant 11</li>
-					<li>Participant 17 and NAO</li>
-					<li>Participant 9 and NAO</li>
-					<li>Participant 14</li>
-					<li>Participant 1 and NAO</li>
-					<li>Participant 4 and NAO</li>
-					</ol>
-				</div>
-				<div id = "right">
-					<ul>
-					<li>16 points</li>
-					<li>15 points</li>
-					<li>14 points</li>
-					<li>13 points</li>
-					<li>12 points</li>
-					<li>8 points</li>
-					<li>6.5 points</li>
-					<li>5 points</li>
-					<li>4 points</li>
-					<li>3.5 points</li>
-					</ul>
-				</div>
+				<form action="/" method="post">
+				Thank you for playing a trivia game with Nao! We know it's frustrating to be on a team and end up doing all the work only to get the same amount of credit.
+				<br>
+				<br>
+				On the next page, you will see the high score board, and you will be able to assess your score, relative to other participants'. Please assess this scoreboard carefully.
+				<br>
+				<br>
+				We want to divide the points your team earned fairly so you get the position you deserve on the scoreboard. After you finish perusing this scoreboard, the experimenter will take you out of the experimentation room to take a survey.
+				<br>
+				<br>
+				There, you will rate the degree to which each team member contributed to your score and thus deserves points. We will ask Nao this same question. If Person A claims equal contribution and Person B feels that A did not pull their weight, we will believe the one who claims to have contributed more. Please be honest! If both you and Nao claim full credit, we will not be able to award anyone any points. 
+				<input id="button" type="submit" value="Submit">
+				</form>
 			</div>
 		</center>
 	</body>
