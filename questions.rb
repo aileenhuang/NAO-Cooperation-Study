@@ -87,5 +87,5 @@ def compute_pos(score, choice=0)
             return str
         end
     end
-    return str = str1 + "0" + str2 + (i+1).to_s + "."
+    return str = str1 + score.to_s + str2 + (i+1).to_s + "."
 end
