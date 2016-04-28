@@ -1,0 +1,24 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="home_style.css">
+		<title>Trivia Game</title>
+	</head>
+
+	<body>
+
+		<center>
+			<h1>Question <%= question_num %></h1>
+			
+			<div id="container">
+			<form action="/" method="post">
+				<label>
+					<span><%= question %></span>
+					<textarea rows="2" cols="40" name="inputtext" placeholder="Type answer here." required></textarea>
+				</label>
+
+				<input id="button" type="submit" value="Submit">
+			</form>
+			</div>
+		</center>
+	</body>
+</html>

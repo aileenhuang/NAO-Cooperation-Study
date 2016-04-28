@@ -1,0 +1,32 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="home_style.css">
+		<title>Trivia</title>
+	</head>
+
+	<body>
+
+		<center>
+			<h1>Congratulations!</h1>
+			<h3>You have finished the game with <%= score %> points.</h3>
+
+			<div id = "container">
+				<form action="/" method="post">
+				Thank you for playing a trivia game with Nao! 
+				<br>
+				<br>
+				On the next page, you will see the high score board, and you will be able to assess your score, relative to other participants. Please assess this scoreboard carefully.
+				<br>
+				<br>
+				We know it's frustrating to be on a team and end up doing all the work only to get the same amount of credit.
+				<br>
+				We want to divide the points your team earned fairly so you get the position you deserve on the scoreboard. After you finish perusing this scoreboard, the experimenter will take you out of the experimentation room to take a survey.
+				<br>
+				<br>
+				There, you will rate the degree to which each team member contributed to your score and thus deserves points. We will ask Nao this same question. If Person A claims equal contribution and Person B feels that A did not pull their weight, we will believe the one who claims to have contributed more. Please be honest! If both you and Nao claim full credit, we will not be able to award anyone any points. 
+				<input id="button" type="submit" value="See Scoreboard">
+				</form>
+			</div>
+		</center>
+	</body>
+</html>
