@@ -1,13 +1,12 @@
-# Credit Where Credit is Due: An Evaluation of Humans' Willingness to Share Credit for Work With Robots
+# Credit Where Credit is Due
+### An Evaluation of Humans' Willingness to Share Credit for Work With Robots
 #### Researchers: Aileen Huang and Aleksandra Zakrzewska
 
-Welcome to our GitHub repository, which also doubles as our repository for our research at the Yale University Social Robotics Lab. 
+Welcome to our GitHub repository for our research at the [Yale University Social Robotics Lab](http://scazlab.yale.edu).
 
+###Nao-Code
 
-
-Nao-Code
-
-This sub-folder contains all the code necessary to control the Nao robot for the "Credit Where Credit is Due" study by Aleksandra Zakrzewska and Aileen Huang.
+This README contains all the code necessary to control the Nao robot for the "Credit Where Credit is Due" study by Aleksandra Zakrzewska and Aileen Huang.
 
 The behaviors directory contains some preprogrammed motions from Nao.
 The pynaoqi-python-2.7-naoqi-1.14-mac64 directory contains the naoqi python library. 
