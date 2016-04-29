@@ -4,9 +4,10 @@
 
 Welcome to our GitHub repository for our research at the [Yale University Social Robotics Lab](http://scazlab.yale.edu).
 
-###Nao-Code
 
-This README contains all the code necessary to control the Nao robot for the "Credit Where Credit is Due" study by Aleksandra Zakrzewska and Aileen Huang.
+This README contains all the code necessary to control the Nao robot for the "Credit Where Credit is Due" study by Aleksandra Zakrzewska and Aileen Huang, as well as the code for the trivia game.
+
+###Nao Code
 
 The behaviors directory contains some preprogrammed motions from Nao.
 The pynaoqi-python-2.7-naoqi-1.14-mac64 directory contains the naoqi python library. 
@@ -49,6 +50,22 @@ react_answer() is used after an answer has been tried and the participant tells 
 
 **ip.txt** contains no code. It contains the IP address at which Nao can be accessed in order to establish a connection. Nao's IP address can be found by pressing his chest button. 
 
-**Nao Cheatsheet** also does not contain any code. It stores only a list of the codes for all of the possible responses in react() and react_answer().
+**Nao Cheatsheet** also does in any code. It stores only a list of the codes for all of the possible responses in react() and react_answer().
 
 	
+###Trivia Game Code
+
+The trivia game was created with [Sinatra](http://www.sinatrarb.com/). You can find download instructions on the official website.
+
+If you'd like to run the trivia game, you may execute the game with the Bash command `<ruby app.rb>`
+and you can access the trivia game by typing in `<localhost:9494>` into your browser of choice.
+
+Several things to note:
+
+The game is not whitespace nor capital-sensitive, but it is spelling-sensitive with zero tolerance for spelling mistakes. An issue (albeit largely inconsequential) that we ran into was that our participants would sometimes spell certain words incorrectly. This is a simple trivia game and does not handle that properly.
+
+Please note that the game comes with a particular file called `<a.in>`. This file contains the current participant number. The program spits out that number into a log file of all of the participants' answers in the game, and updates the every time the game is reset so that there is no need to change it manually. This file is a necessary component of the program.
+
+All log files go into a directory called Logs. This is also a necessary component of the program.
+
+Lastly, because the HTTP requests are relatively simplistic, hitting the back button on the browser tends to incorrectly send a POST request. All participants were instructed not to hit the back button as a result.
