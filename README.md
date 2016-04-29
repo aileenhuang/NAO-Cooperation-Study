@@ -57,15 +57,14 @@ react_answer() is used after an answer has been tried and the participant tells 
 
 The trivia game was created with [Sinatra](http://www.sinatrarb.com/). You can find download instructions on the official website.
 
-If you'd like to run the trivia game, you may execute the game with the Bash command `<ruby app.rb>`
-and you can access the trivia game by typing in `<localhost:9494>` into your browser of choice.
+If you'd like to run the trivia game, you may execute the game with the Bash command `ruby app.rb`, and you can access the trivia game by typing in `localhost:9494` into your browser of choice.
 
 Several things to note:
 
 The game is not whitespace nor capital-sensitive, but it is spelling-sensitive with zero tolerance for spelling mistakes. An issue (albeit largely inconsequential) that we ran into was that our participants would sometimes spell certain words incorrectly. This is a simple trivia game and does not handle that properly.
 
-Please note that the game comes with a particular file called `<a.in>`. This file contains the current participant number. The program spits out that number into a log file of all of the participants' answers in the game, and updates the every time the game is reset so that there is no need to change it manually. This file is a necessary component of the program.
+Please note that the game comes with a particular file called `a.in`. This file contains the current participant number. The program spits out that number into a log file of all of the participants' answers in the game, and updates the every time the game is reset so that there is no need to change it manually. This file is a necessary component of the program.
 
-All log files go into a directory called Logs. This is also a necessary component of the program.
+All log files go into a directory called `Logs`. This is also a necessary component of the program.
 
-Lastly, because the HTTP requests are relatively simplistic, hitting the back button on the browser tends to incorrectly send a POST request. All participants were instructed not to hit the back button as a result.
+Lastly, because the `HTTP` requests are relatively simplistic, hitting the back button on the browser tends to incorrectly send a `POST` request. All participants were instructed not to hit the back button as a result.
